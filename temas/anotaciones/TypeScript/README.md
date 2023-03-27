@@ -3,7 +3,7 @@ Debido a que en Lua las anotaciones son muy limitadas, en este tema vamos a recu
 
 ## Decorators
 
-Los decoratos se usan con la forma **@expresion** donde **expresion** debe ser la función que será llamada con la información sobre la declaración del decorator. Es decir, si damos un nombre a un decorator como **@aims** podríamos hacer la función **aims** como sigue:
+Los decoratos se usan con la forma **@expresion** donde **expresion** debe ser la función que será llamada con la información sobre la declaración del decorator. Es decir, si establecemos un nombre a un decorator como **@aims**  podríamos hacer la función **aims** como sigue:
 ```TypeScript
     function aims(target)
     {
@@ -11,7 +11,7 @@ Los decoratos se usan con la forma **@expresion** donde **expresion** debe ser l
     }
 ```
 
-Una aplicación interesante para los decorators es la siguiente, si queremos modificar como un decorator es aplicado a una declaración, nosotros podemos escribir un *decorator factory*. Éste no es más que una función que devuelve la expresión que llamaremos por el decorator. Por ejemplo:
+Una aplicación interesante para los decorators es la siguiente, si queremos observar como un decorator es aplicado a una declaración, nosotros podríamos escribir un *decorator factory*. Éste no es más que una función que devuelve la expresión que llamaremos por el decorator. Por ejemplo:
 
 ```TypeScript
     function color(value: string)
@@ -38,7 +38,7 @@ Otra característica interesante es la composición de decorators, es decir, pod
     x
 ```
 
-Estas llamadas es equivalente a una función matemática. En este caso sería: **f(g(x))**.
+Estas llamadas son equivalentes a una función matemática. En este caso sería: **f(g(x))**.
 
 Veamos un ejemplo aclarativo para entender mejor los decorators en TypeScript:
 
@@ -73,7 +73,7 @@ En el ejemplo, hemos aplicado el **decorator** *@createAccount* al método *depo
 De esta manera, podemos utilizar los decoradores para agregar funcionalidades adicionales a nuestros métodos originales sin necesidad de modificarlos.
 
 # Compilar el código
-Si se desea compilar el código, primero deberá instalar TypeScript en su máquina, posteriormente necesitará estos dos comandos para su compilación y ejecució:
+Si se desea compilar el código, primero deberá instalar TypeScript en su máquina, posteriormente necesitará estos dos comandos para su compilación y ejecución:
 
 ```
     tsc index.ts -target ES5 --emitDecoratorMetadata --experimentalDecorators
