@@ -25,12 +25,12 @@ Una aplicación interesante para los decorators es la siguiente, si queremos mod
     }
 ```
 
-Otra característica interesante es la composición de decorators, es decir, podemos llamas a varios decorators en una sola línea:
+Otra característica interesante es la composición de decorators, es decir, podemos llamar a varios decorators en una sola línea:
 ```TypeScript
     @f  @g x
 ```
 
-O en varias líneas:
+Ó en varias líneas:
 
 ```TypeScript
     @f
