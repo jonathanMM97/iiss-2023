@@ -1,5 +1,5 @@
 # Anotaciones en TypeScript
-Debido a que en Lua las anotaciones son muy limitadas, en este tema vamos a recurrir a TypeScript. Los decorators son la forma que tiene TypeScript de implementar las anotaciones.
+Debido a que en Lua las anotaciones son muy limitadas, en este tema vamos a recurrir a TypeScript. Los decoradores son la forma que tiene TypeScript de implementar las anotaciones.
 
 ## Decorators
 
@@ -11,7 +11,7 @@ Los decoratos se usan con la forma **@expresion** donde **expresion** debe ser l
     }
 ```
 
-Una aplicación interesante para los decorators es la siguiente, si queremos observar como un decorator es aplicado a una declaración, nosotros podríamos escribir un *decorator factory*. Éste no es más que una función que devuelve la expresión que llamaremos por el decorator. Por ejemplo:
+Una aplicación interesante para los decorators es la siguiente; si queremos observar como un decorator es aplicado a una declaración, podríamos escribir un *decorator factory*. Este no es más que una función que devuelve la expresión que llamaremos por el decorator. Por ejemplo:
 
 ```TypeScript
     function color(value: string)
@@ -30,7 +30,7 @@ Otra característica interesante es la composición de decorators, es decir, pod
     @f  @g x
 ```
 
-Ó en varias líneas:
+O en varias líneas:
 
 ```TypeScript
     @f
