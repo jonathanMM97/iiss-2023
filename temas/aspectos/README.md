@@ -1,1 +1,0 @@
-Para esta práctica hemos elegido java como lenguaje de programación.
