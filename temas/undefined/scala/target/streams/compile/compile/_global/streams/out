@@ -1,0 +1,4 @@
+[0m[[0m[31merror[0m] [0m[0mC:\Users\jonat\OneDrive - alum.uca.es\Escritorio\prueba\iiss-2023\temas\undefined\scala\AuthorizedEither.Scala:5:41: not found: value cuenta[0m
+[0m[[0m[31merror[0m] [0m[0m            case Some(account) => Right(cuenta)[0m
+[0m[[0m[31merror[0m] [0m[0m                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
