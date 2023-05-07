@@ -27,13 +27,24 @@ function Lista:mostrar()
     end
 end
 
+function Lista:filtro(tbl, predicate)
+    local result = {}
+    for i, v in ipairs(tbl) do
+        if predicate(v) then
+            table.insert(result, v)
+        end
+    end
+    return result
+end
+
 function Lista:mostrarPares()
-    local listaPar = table.filter(self.list, function(element) return element % 2 == 0 end)
+    local listaPar = Lista:filtro(self.list, function(element) return element % 2 == 0 end)
     if listaPar ~= nil then
         io.write("Los valores pares de la lista son: ( ")
         for _, element in pairs(listaPar) do
-            io.write(element) 
+            io.write(element .. " ") 
         end
+        print(")")
     else
         print("La lista esta vacia...")
     end
