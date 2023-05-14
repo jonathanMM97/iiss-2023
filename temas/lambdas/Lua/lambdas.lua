@@ -41,7 +41,7 @@ function Lista:mostrarPares()
     local listaPar = Lista:filtro(self.list, function(element) return element % 2 == 0 end)
     if listaPar ~= nil then
         io.write("Los valores pares de la lista son: ( ")
-        for _, element in pairs(listaPar) do
+       for _, element in pairs(listaPar) do
             io.write(element .. " ") 
         end
         print(")")
@@ -51,7 +51,25 @@ function Lista:mostrarPares()
 
 end
 
+function Lista:mostrarDivisores(n)
+    return function()
+        local listaPar = Lista:filtro(self.list, function(element) return element % n == 0 end)
+        if listaPar ~= nil then
+            io.write("Los valores pares de la lista son: ( ")
+        for _, element in pairs(listaPar) do
+                io.write(element .. " ") 
+            end
+            print(")")
+        else
+            print("La lista esta vacia...")
+        end
+    end
+end
+
+
 local lista = Lista.vacia({})
 lista:copia({0,1,2,3,4,5,6,7,8,9})
 lista:mostrar()
 lista:mostrarPares()
+local valor = lista:mostrarDivisores(3)
+valor()

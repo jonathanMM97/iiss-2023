@@ -86,6 +86,40 @@ Para ayudar a la legibilidad podemos mejorar la implementación anterior, para e
 
 Como podemos observar, hemos conseguido obtener una implementación de un ejemplo de lambda en Lua muy legible, el lambda se pasa como predicado a la función y es dicha función la que irá llamando a la función.
 
+Por último, como funcionalidad añadida, hemos querido dar un ejemplo de las posibilidades que tenemos en Lua para "capturar" variables de contexto de ejecución en  una lambda. Sea la función:
+
+```Lua
+    function Lista:mostrarDivisores(n)
+        return function()
+            local listaPar = Lista:filtro(self.list, function(element) return element % n == 0 end)
+            if listaPar ~= nil then
+                io.write("Los valores pares de la lista son: ( ")
+            for _, element in pairs(listaPar) do
+                    io.write(element .. " ") 
+                end
+                print(")")
+            else
+                print("La lista esta vacia...")
+            end
+        end
+    end
+```
+
+La función mostrarDivisores recibirá un valor "n", con el que comprobará si es divisible con el valor dado, pero lo interesante es que incluso después de la función **mostrarDivisores** haya terminado su ejecución, la funcion anonima conservará el valor de **n**. Por lo que dado unas líneas de ejecución tal que:
+
+```Lua
+    local lista = Lista.vacia({})
+    lista:copia({0,1,2,3,4,5,6,7,8,9})
+    lista:mostrar()
+    lista:mostrarPares()
+    local valor = lista:mostrarDivisores(3)
+    valor()
+```
+
+<h2> Programa en ejecución </h2>
+
+
+
 # Conclusión
 En Lua el uso de lambdas es muy sencillo y fácil de implementar con funciones anonimas ya que este lenguaje no posee un soporte nativo para estas.
 
