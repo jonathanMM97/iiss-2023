@@ -118,7 +118,11 @@ La función mostrarDivisores recibirá un valor "n", con el que comprobará si e
 
 <h2> Programa en ejecución </h2>
 
+<center>
+	
+[ejecucionLuaLambda.webm](https://github.com/jonathanMM97/iiss-2023/assets/116075515/3b51c706-7836-4b50-9433-8c99f8a4f2bc)
 
+</center>
 
 # Conclusión
 En Lua el uso de lambdas es muy sencillo y fácil de implementar con funciones anonimas ya que este lenguaje no posee un soporte nativo para estas.
