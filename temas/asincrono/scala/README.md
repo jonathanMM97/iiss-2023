@@ -47,7 +47,12 @@ Bien, este ejemplo es muy explicativo solo con el código, aun así mostraremos 
 
 <h2> Programa en ejecución (Como compilar) </h2>
 
+<center>
+    
+    [scalaFuture.webm](https://github.com/jonathanMM97/iiss-2023/assets/116075515/df59554a-a800-474b-ad86-f82835d7a441)
 
+    
+</center>
 
 # Conclusión
 La programación asincrona nos permite aprovechar al máximo los recursos de la CPU al evitar bloqueos y permitir la ejecución concurrente de múltiples tareas, pero hay que tener en cuenta si hay memoria compartida, especialmente cuando varias hebras quieran acceder a un mismo recurso para leer y escribir, en dicho caso debemos tratar la exclusión mutua de forma correcta.
