@@ -47,6 +47,20 @@ Bien, este ejemplo es muy explicativo solo con el código, aun así mostraremos 
 
 <h2> Programa en ejecución (Como compilar) </h2>
 
+Puede que tengas problemas al compilar si usas el comando:
+
+```scala
+    scalac scalaFuture.scala
+```
+
+Así que solo usa el comando:
+
+```scala
+    scala scalaFuture.scala
+```
+
+Tal y como se muestra en el video. En el video la versión de scala que se usó fue: ```Scala code runner version 2.13.10 -- Copyright 2002-2021, LAMP/EPFL and Lightbend, Inc.```.
+
 [scalaFuture.webm](https://github.com/jonathanMM97/iiss-2023/assets/116075515/40c868c3-15ac-4bd9-b76a-045fc71277fe)
 
 
