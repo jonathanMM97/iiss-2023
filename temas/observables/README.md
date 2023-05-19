@@ -61,7 +61,7 @@ En este apartado vamos a explicar el código implementado, el cuál tiene la mis
 
 # Como compilar
 Hemos añadido las dependencias necesarias para ejecutar el código, aún así debes instalar **Node.js**, en caso de no tenerlo te dejo un link:
-- [label](https://nodejs.org/)
+- [Instalar nodejs](https://nodejs.org/)
 
 Una vez instalado debes ejecutar el comando:
 ```
